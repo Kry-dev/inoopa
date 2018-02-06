@@ -4,5 +4,15 @@
 	height: 150px;
 	border-bottom: 5px solid $primary;
 	box-sizing: border-box;
+	@include box-shadow;
 
+	&__link{
+		font-size: 0.75rem;
+		font-family: "Arial";
+		font-weight: 600;
+		text-align: right;
+		&-tel{
+			color: $dark;
+		}
+	}
 }

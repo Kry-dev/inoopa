@@ -8,10 +8,24 @@
 		}
 	}
 	.nav-link {
-			padding: 3px .5rem;
-			margin-right: 3px;
-			border: 1px solid $dark;
-			color: $dark;
-			border-radius: 5px 5px 0 0;
+		padding: 3px .5rem;
+		margin-right: 3px;
+		border: 1px solid $dark;
+		color: $dark;
+		border-radius: 5px 5px 0 0;
+		border-bottom: 0;
+		text-transform: uppercase;
+		font-weight: bold;
+		&:hover,
+		&:focus,
+		&:active,
+		&.active{
+			color: $white;
+			background: $primary;
+			border: 1px solid $primary;
+		}
+		&.dropdown-toggle:after{
+			vertical-align: 3px;
+		}
 	}
 }

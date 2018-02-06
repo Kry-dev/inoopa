@@ -1,7 +1,7 @@
 //
 // Color system
 //
-$blue: #0096d6;
+$blue: #234B8D;
 $indigo:  #6610f2;
 $pink:    #e83e8c ;
 $purple: #a56478;
@@ -24,7 +24,7 @@ $gray-500: #adb5bd;
 $gray-600: #868e96;
 $gray-700: #495057;
 $gray-800: $dark;
-$gray-middle: #a5a5a5;
+$gray-middle: #EEEEEE;
 $black: #2b2e2b;
 $black-dark: #000;
 
@@ -105,8 +105,8 @@ $sizes: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white;
-$body-color:                $black ;
+$body-bg:                   $gray-middle;
+$body-color:                $dark ;
 
 
 // Links
@@ -127,7 +127,7 @@ $header-height: 40px;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-base:  'Montserrat', sans-serif;
+$font-family-base:  'Arial', sans-serif;
 $font-size-base:              .8rem;
 $font-size-lg:                ($font-size-base * 1.25);
 $font-size-sm:                ($font-size-base * .875);

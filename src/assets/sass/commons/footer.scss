@@ -1,0 +1,38 @@
+.footer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	&__content{
+		display: flex;
+		flex-direction: column;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	h6{
+		font-size: 1rem;
+		color: $white;
+		opacity: .7;
+	}
+	a{
+		font-size: .8rem;
+		color: $white;
+		opacity: .7;
+		&:hover{
+			opacity: 1;
+		}
+	}
+	p{
+		font-size: .8rem;
+		color: $white;
+		opacity: .7;
+	}
+	&-title{
+		font-size: 1rem;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	&Sitemap-list{
+		margin-bottom: 1rem;
+	}
+}

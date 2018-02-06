@@ -9,13 +9,8 @@
 //= ../../../node_modules/slick-carousel/slick/slick.js
 
 
-//= commons/tooltip.js
 //= commons/dropdown.js
 //= commons/collapse.js
-//= commons/productSlider.js
-//= commons/scrollTop.js
-//= commons/loading.js
-//= commons/showFilterModal.js
 
 $(document).ready(function() {
     initCollapse();

@@ -5,10 +5,10 @@ $blue: #0096d6;
 $indigo:  #6610f2;
 $pink:    #e83e8c ;
 $purple: #a56478;
-$red:     #e74c3c;
+$red:     #B50E0B;
 $orange:  #fd7e14;
 $yellow: #f5aa69;
-$dark: #272727;
+$dark: #474A4A;
 $green: #a1b868;
 $teal: #16a085;
 $cyan:    #17a2b8;
@@ -113,7 +113,7 @@ $body-color:                $black ;
 //
 // Style anchor elements.
 
-$link-color:                $red;
+$link-color:                $blue;
 $link-decoration:           none;
 $link-hover-color:          darken($link-color, 15%);
 $link-hover-decoration:     underline;
@@ -128,7 +128,7 @@ $header-height: 40px;
 
 // stylelint-disable value-keyword-case
 $font-family-base:  'Montserrat', sans-serif;
-$font-size-base:              1rem;
+$font-size-base:              .8rem;
 $font-size-lg:                ($font-size-base * 1.25);
 $font-size-sm:                ($font-size-base * .875);
 

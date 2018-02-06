@@ -1,0 +1,17 @@
+.navbar {
+	&-brand {
+		width: 88px;
+		height: 88px;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+	.nav-link {
+			padding: 3px .5rem;
+			margin-right: 3px;
+			border: 1px solid $dark;
+			color: $dark;
+			border-radius: 5px 5px 0 0;
+	}
+}

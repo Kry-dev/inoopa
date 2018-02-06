@@ -1,0 +1,39 @@
+.topLinks{
+	display: flex;
+	width: 100%;
+
+	&__row{
+		height: 38px;
+		background: linear-gradient(to bottom, $white 50%, $gray-middle 100%);
+		align-items: center;
+		border-bottom: 1 solid ;
+	}
+	a{
+		font-size: 0.75rem;
+		text-decoration: underline;
+	}
+	span{
+		color: $primary;
+		margin-right: 5px;
+		text-decoration: none;
+	}
+	.langLinks{
+		display: flex;
+		justify-content:flex-end;
+		&__link{
+			text-decoration: underline;
+			color: $gray-500;
+			font-size: .8rem;
+			font-weight: 600;
+			padding: 0 1rem;
+			border-left: 1px solid $gray-500;
+			&:hover,
+			&:focus,
+			&:active,
+			&.active{
+				color: $primary;
+
+			}
+		}
+	}
+}

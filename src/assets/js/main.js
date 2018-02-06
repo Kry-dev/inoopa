@@ -14,5 +14,4 @@
 
 $(document).ready(function() {
     initCollapse();
-    window.onscroll = function() {scrollFunction()};
 });

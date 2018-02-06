@@ -19,8 +19,23 @@
 		align-self: center;
 
 		&-header{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
 			background: transparent;
 			border: none;
+			margin-bottom: 1rem;
+			flex-wrap: wrap;
+		}
+		&-title-box{
+			display: flex;
+			flex-direction: column;
+		}
+		&-icon{
+			max-width: 50px;
+			display: flex;
+			margin-right: 1rem;
+
 		}
 		&-title{
 			color: $primary;
@@ -28,6 +43,16 @@
 		&-footer{
 			border: none;
 			background: transparent;
+		}
+		&-link{
+			background: $dark;
+			color: $white;
+			padding: .5rem 1.5rem;
+			border-radius: $border-radius;
+			&:hover,
+			&:active{
+				background: darken($dark, 10%);
+			}
 		}
 	}
 	&-imgbox{

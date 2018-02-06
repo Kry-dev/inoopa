@@ -1,0 +1,3 @@
+function loadingInit() {
+    location.reload();
+}

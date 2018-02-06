@@ -1,0 +1,66 @@
+$numDots:11;
+$diameter:100px;
+$dotDiameter:12px;
+$dotColor:#c8321e;
+$rotateAngle: 360 / $numDots;
+
+
+.loading{
+	display: block;
+	position: relative;
+	height:$diameter;
+	margin-bottom: $diameter;
+}
+
+
+
+.loader {
+	width:$diameter;
+	height:$diameter;
+	box-sizing:border-box;
+	position:absolute;
+	top: 20px;
+	left: 50%;
+	margin-left: -50px;
+	animation: loader 40s linear infinite;
+}
+.dot {
+	height:$diameter;
+	width:$dotDiameter;
+	box-sizing:border-box;
+	position:absolute;
+	left:($diameter / 2) - ($dotDiameter / 2);
+	opacity: 1;
+}
+.dot:before {
+	content:"";
+	display:block;
+	width:$dotDiameter;
+	height:$dotDiameter;
+	border-radius:50%;
+	background:$dotColor;
+	box-sizing:border-box;
+	margin-top:-($dotDiameter / 2);
+	opacity: .5;
+	animation: before 2s ease-in infinite;
+}
+@for $i from 1 through $numDots {
+	.dot:nth-of-type(#{$i}) {
+		transform:rotate(($rotateAngle * $i)+deg);
+	}
+	.dot:nth-of-type(#{$i}):before {
+		animation-delay:-#{$i * 0.1}s;
+	}
+}
+@keyframes loader {
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+@keyframes before {
+	0% {transform:scale(1); opacity:1;}
+	5% {transform:scale(1);}
+	45% {transform:scale(0.4);}
+	50% {transform:scale(0.4); opacity:0.8;}
+	55% {transform:scale(0.4); opacty:0.8;}
+	100% {transform:scale(1); opacity:1;}
+}

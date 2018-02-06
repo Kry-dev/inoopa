@@ -1,0 +1,15 @@
+.main {
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	flex-direction: column;
+	flex: 1;
+	margin-top: - $header-min-height;
+	margin-bottom: - $footer-min-height;
+	padding-top: $header-min-height;
+	padding-bottom: $footer-min-height;
+	@include media-breakpoint-down(md){
+		padding-left: 0 ;
+		padding-right: 0;
+	}
+}

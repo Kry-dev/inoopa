@@ -14,7 +14,7 @@
 	}
 	span{
 		color: $primary;
-		margin-right: 5px;
+		margin-right: 3px;
 		text-decoration: none;
 	}
 	.langLinks{
@@ -26,6 +26,7 @@
 			font-size: .8rem;
 			font-weight: 600;
 			padding: 0 1rem;
+			margin-right: 5px;
 			border-left: 1px solid $gray-500;
 			&:hover,
 			&:focus,

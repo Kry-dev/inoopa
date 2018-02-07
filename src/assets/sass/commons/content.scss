@@ -3,12 +3,14 @@
 	flex-direction: column;
 	width: 100%;
 	min-height: 100vh;
+	overflow: hidden;
 	.row{
 		align-items: center;
 	}
 	.content__title-box{
 		border-radius: $border-radius;
 		display: flex;
+		flex-direction: column;
 		width: 100%;
 	}
 	.content__title-h1{
@@ -30,15 +32,33 @@
 		&-title-box{
 			display: flex;
 			flex-direction: column;
+			width: 90%;
+			margin: 0 auto;
+			img{
+				display: block;
+				width: 100%;
+			}
 		}
 		&-icon{
 			max-width: 50px;
 			display: flex;
 			margin-right: 1rem;
-
+			@include media-breakpoint-down(sm){
+				display: block;
+				margin: 0 auto 1rem;
+			}
 		}
 		&-title{
 			color: $primary;
+			@include media-breakpoint-down(sm){
+				font-size: .8rem;
+			}
+		}
+		&-subtitle{
+			@include media-breakpoint-down(sm){
+				font-size: .8rem;
+				text-align: center;
+			}
 		}
 		&-footer{
 			border: none;
@@ -53,6 +73,10 @@
 			&:active{
 				background: darken($dark, 10%);
 			}
+			@include media-breakpoint-down(sm){
+				display: block;
+				text-align: center;
+			}
 		}
 	}
 	&-imgbox{
@@ -61,5 +85,24 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+		img{
+			width: 80%;
+			display: block;
+			margin: 0 auto;
+		}
+		@include media-breakpoint-down(sm){
+			padding-bottom: 1rem;
+		}
+	}
+	@include media-breakpoint-down(sm){
+		.py-5{
+			padding-top: 1rem!important;
+			padding-bottom: 1rem!important;
+		}
+		.row{
+			padding-top: 1rem !important;
+		}
+	}
+	@include media-breakpoint-down(xs){
 	}
 }

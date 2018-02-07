@@ -1,4 +1,9 @@
 .navbar {
+	@include media-breakpoint-down(sm){
+		flex-wrap: nowrap;
+		padding-left: .5rem !important;
+		padding-right: .5rem !important;
+	}
 	&-brand {
 		width: 88px;
 		height: 88px;
@@ -26,6 +31,9 @@
 		}
 		&.dropdown-toggle:after{
 			vertical-align: 3px;
+		}
+		@include media-breakpoint-down(lg){
+			padding: 3px;
 		}
 	}
 }

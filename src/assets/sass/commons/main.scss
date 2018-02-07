@@ -11,5 +11,13 @@
 	@include media-breakpoint-down(md){
 		padding-left: 0 ;
 		padding-right: 0;
+		overflow: hidden;
+	}
+	@include media-breakpoint-down(xs){
+		.container{
+			padding-left: 0 ;
+			padding-right: 0;
+		}
+
 	}
 }

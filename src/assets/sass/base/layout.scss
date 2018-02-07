@@ -38,6 +38,9 @@ h4,
 h5{
 	font-family: 'Arial';
 	font-weight: 700;
+	@include media-breakpoint-down(sm){
+		text-align: center;
+	}
 }
 h5{
 	font-size: 1.2rem;

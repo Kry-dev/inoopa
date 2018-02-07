@@ -5,7 +5,16 @@
 	border-bottom: 5px solid $primary;
 	box-sizing: border-box;
 	@include box-shadow;
-
+	@include media-breakpoint-down(sm){
+		height: 120px;
+		background: $white;
+		.d-sm-none{
+			display: none !important;
+		}
+	}
+	@include media-breakpoint-down(sm){
+		height: 90px;
+	}
 	&__link{
 		font-size: 0.75rem;
 		font-family: "Arial";
@@ -15,4 +24,5 @@
 			color: $dark;
 		}
 	}
+
 }

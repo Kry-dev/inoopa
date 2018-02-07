@@ -37,4 +37,9 @@
 			}
 		}
 	}
+	.col:first-child{
+		@include media-breakpoint-down(sm){
+			display: none;
+		}
+	}
 }

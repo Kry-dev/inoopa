@@ -117,10 +117,6 @@ $link-decoration:           none;
 $link-hover-color:          darken($link-color, 15%);
 $link-hover-decoration:     underline;
 
-
-// header
-$header-height: 40px;
-
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
@@ -154,12 +150,11 @@ $container-max-widths: (
 
 
 	//header sizes
-$header-min-height: 70px;
+$header-min-height: 150px;
+
 
 //footer sizes
 $footer-min-height: 70px;
 
-//products grid
-$product-item-w: 190px;
-$product-item-h: ($product-item-w * 2);
+
 

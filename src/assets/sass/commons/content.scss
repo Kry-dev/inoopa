@@ -19,7 +19,6 @@
 	.card{
 		border: none;
 		align-self: center;
-
 		&-header{
 			display: flex;
 			flex-direction: row;
@@ -28,6 +27,9 @@
 			border: none;
 			margin-bottom: 1rem;
 			flex-wrap: wrap;
+			@include media-breakpoint-down(sm){
+				flex-direction: column;
+			}
 		}
 		&-title-box{
 			display: flex;

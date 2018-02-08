@@ -15509,8 +15509,8 @@ p {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
+    width: 85%;
+    margin-left: auto;
 }
 
 .content .card-title-box img {
@@ -15594,6 +15594,24 @@ p {
     .content-imgbox {
         padding-bottom: 1rem;
     }
+}
+
+.content-mapBox {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+}
+
+.content-mapBox iframe {
+    display: block;
+    min-height: 300px;
 }
 
 @media (max-width: 767.98px) {

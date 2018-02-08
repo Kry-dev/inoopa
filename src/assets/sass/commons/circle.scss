@@ -1,0 +1,54 @@
+$circle-width-100: 225px;
+$circle-height-100:$circle-width-100;
+$circle-width-80: $circle-width-100 * 0.8;
+$circle-height-80: $circle-width-80;
+$circle-width-70: $circle-width-100 * 0.7;
+$circle-height-70: $circle-width-70;
+
+.circle{
+	display: flex;
+	border-radius: 50%;
+	overflow: hidden;
+	flex-direction: column;
+	padding: 1rem;
+	justify-content: center;
+	align-items: center;
+	font-size: .8rem;
+	@include box-shadow;
+	&.circle-100{
+		position: relative;
+		z-index: 50;
+		width:$circle-width-100;
+		height: $circle-height-100;
+	}
+	&.circle-80{
+		position: relative;
+		z-index: 80;
+		width:$circle-width-80;
+		height: $circle-height-80;
+
+	}
+	&.circle-70{
+		position: relative;
+		z-index: 80;
+		width:$circle-width-70;
+		height: $circle-height-70;
+	}
+	p{
+		margin-bottom: .2rem;
+	}
+	p,span{
+		text-align: center;
+		font-size: 1rem;
+	}
+	&.bg-dark{
+		p,span{
+			color: $white;
+		}
+	}
+	&.bg-primary{
+		p,span{
+			color: $white;
+		}
+	}
+}

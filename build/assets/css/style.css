@@ -15499,8 +15499,7 @@ p {
 
 @media (max-width: 767.98px) {
     .content .card-header {
-        -ms-flex-direction: column;
-        flex-direction: column;
+        padding: .75rem 1rem;
     }
 }
 
@@ -15527,25 +15526,31 @@ p {
 
 @media (max-width: 767.98px) {
     .content .card-icon {
-        display: block;
-        margin: 0 auto 1rem;
+        max-width: 30px;
+        margin-right: 5px;
     }
 }
 
 .content .card-title {
     color: #B50E0B;
+    margin-bottom: 0;
 }
 
 @media (max-width: 767.98px) {
     .content .card-title {
         font-size: .8rem;
+        text-align: left;
     }
+}
+
+.content .card-subtitle {
+    margin-top: .75rem;
 }
 
 @media (max-width: 767.98px) {
     .content .card-subtitle {
         font-size: .8rem;
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -15596,6 +15601,24 @@ p {
     }
 }
 
+.content-svgbox {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.content-svgbox img {
+    max-width: 105px;
+}
+
+.content-svgbox h5 {
+    text-align: center;
+}
+
 .content-mapBox {
     display: -ms-flexbox;
     display: flex;
@@ -15612,6 +15635,12 @@ p {
 .content-mapBox iframe {
     display: block;
     min-height: 300px;
+}
+
+@media (max-width: 767.98px) {
+    .content-mapBox {
+        width: 100%;
+    }
 }
 
 @media (max-width: 767.98px) {

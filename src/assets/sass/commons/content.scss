@@ -28,7 +28,7 @@
 			margin-bottom: 1rem;
 			flex-wrap: wrap;
 			@include media-breakpoint-down(sm){
-				flex-direction: column;
+				padding: .75rem 1rem;
 			}
 		}
 		&-title-box{
@@ -46,20 +46,23 @@
 			display: flex;
 			margin-right: 1rem;
 			@include media-breakpoint-down(sm){
-				display: block;
-				margin: 0 auto 1rem;
+				max-width: 30px;
+				margin-right: 5px;
 			}
 		}
 		&-title{
 			color: $primary;
+			margin-bottom: 0;
 			@include media-breakpoint-down(sm){
 				font-size: .8rem;
+				text-align: left;
 			}
 		}
 		&-subtitle{
+			margin-top: .75rem;
 			@include media-breakpoint-down(sm){
 				font-size: .8rem;
-				text-align: center;
+				text-align: left;
 			}
 		}
 		&-footer{
@@ -96,6 +99,18 @@
 			padding-bottom: 1rem;
 		}
 	}
+	&-svgbox{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		img{
+			max-width: 105px;
+		}
+		h5{
+			text-align: center;
+		}
+	}
 	&-mapBox{
 		display: flex;
 		flex-direction: column;
@@ -107,6 +122,9 @@
 		iframe{
 			display: block;
 			min-height: 300px;
+		}
+		@include media-breakpoint-down(sm){
+			width: 100%;
 		}
 	}
 	@include media-breakpoint-down(sm){

@@ -15876,9 +15876,14 @@ p {
     }
 }
 
+.content .card-text {
+    font-weight: 700;
+}
+
 .content .card-footer {
     border: none;
     background: transparent;
+    margin-bottom: 2rem;
 }
 
 .content .card-link {

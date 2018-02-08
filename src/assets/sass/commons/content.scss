@@ -65,9 +65,13 @@
 				text-align: left;
 			}
 		}
+		&-text{
+			font-weight: 700;
+		}
 		&-footer{
 			border: none;
 			background: transparent;
+			margin-bottom: 2rem;
 		}
 		&-link{
 			background: $dark;

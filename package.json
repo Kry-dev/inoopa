@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Inoopa- Bootstrap 4",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "chart.js": "^2.7.1"
+  },
   "devDependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "bootstrap-slider": "^10.0.0",

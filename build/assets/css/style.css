@@ -16002,6 +16002,23 @@ p {
     }
 }
 
+.content-chartBox {
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.content-chartBox img {
+    height: 30px;
+}
+
 @media (max-width: 767.98px) {
     .content .py-5 {
         padding-top: 1rem !important;

@@ -122,7 +122,7 @@ $link-hover-decoration:     underline;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-base:  'Arial', sans-serif;
+$font-family-base:  Arial;
 $font-size-base:              .8rem;
 $font-size-lg:                ($font-size-base * 1.25);
 $font-size-sm:                ($font-size-base * .875);

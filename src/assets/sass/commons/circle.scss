@@ -1,9 +1,15 @@
-$circle-width-100: 225px;
+$circle-width-100: 200px;
 $circle-height-100:$circle-width-100;
+$circle-width-100-xs: 120px;
+$circle-height-100-xs: $circle-width-100-xs;
 $circle-width-80: $circle-width-100 * 0.8;
+$circle-width-80-xs: $circle-width-100-xs * 0.8;
 $circle-height-80: $circle-width-80;
+$circle-height-80-xs: $circle-width-80-xs;
 $circle-width-70: $circle-width-100 * 0.7;
+$circle-width-70-xs: $circle-width-100-xs * 0.7;
 $circle-height-70: $circle-width-70;
+$circle-height-70-xs: $circle-width-70-xs;
 
 .circle{
 	display: flex;
@@ -20,12 +26,20 @@ $circle-height-70: $circle-width-70;
 		z-index: 50;
 		width:$circle-width-100;
 		height: $circle-height-100;
+		@include media-breakpoint-down(xs){
+			width: $circle-width-100-xs;
+			height: $circle-height-100-xs;
+		}
 	}
 	&.circle-80{
 		position: relative;
 		z-index: 80;
 		width:$circle-width-80;
 		height: $circle-height-80;
+		@include media-breakpoint-down(xs){
+			width: $circle-width-80-xs;
+			height: $circle-height-80-xs;
+		}
 
 	}
 	&.circle-70{
@@ -33,6 +47,10 @@ $circle-height-70: $circle-width-70;
 		z-index: 80;
 		width:$circle-width-70;
 		height: $circle-height-70;
+		@include media-breakpoint-down(xs){
+			width: $circle-width-70-xs;
+			height: $circle-height-70-xs;
+		}
 	}
 	p{
 		margin-bottom: .2rem;
@@ -40,6 +58,12 @@ $circle-height-70: $circle-width-70;
 	p,span{
 		text-align: center;
 		font-size: 1rem;
+		@include media-breakpoint-down(lg){
+			font-size: .8rem;
+		}
+		@include media-breakpoint-down(xs){
+			font-size: .5rem;
+		}
 	}
 	&.bg-dark{
 		p,span{

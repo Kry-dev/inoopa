@@ -1147,7 +1147,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
     margin: 0;
-    font-family: "Arial", sans-serif;
+    font-family: Arial;
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.5;
@@ -15086,7 +15086,7 @@ body {
     flex-direction: column;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    font-family: "Arial", sans-serif;
+    font-family: Arial;
     height: auto;
     margin: auto;
     width: 100%;
@@ -15877,7 +15877,7 @@ p {
 }
 
 .content .card-text {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .content .card-footer {
@@ -16049,22 +16049,43 @@ p {
 .circle.circle-100 {
     position: relative;
     z-index: 50;
-    width: 225px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 575.98px) {
+    .circle.circle-100 {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 .circle.circle-80 {
     position: relative;
     z-index: 80;
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
+}
+
+@media (max-width: 575.98px) {
+    .circle.circle-80 {
+        width: 96px;
+        height: 96px;
+    }
 }
 
 .circle.circle-70 {
     position: relative;
     z-index: 80;
-    width: 157.5px;
-    height: 157.5px;
+    width: 140px;
+    height: 140px;
+}
+
+@media (max-width: 575.98px) {
+    .circle.circle-70 {
+        width: 84px;
+        height: 84px;
+    }
 }
 
 .circle p {
@@ -16074,6 +16095,18 @@ p {
 .circle p, .circle span {
     text-align: center;
     font-size: 1rem;
+}
+
+@media (max-width: 1199.98px) {
+    .circle p, .circle span {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .circle p, .circle span {
+        font-size: .5rem;
+    }
 }
 
 .circle.bg-dark p, .circle.bg-dark span {
